@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { fetchNumbersFromAPI, updateWindow } = require('../services/numberservice');
+const { fetchNumbersFromAPI, updateWindow } = require('..src/services/numberService');
 
 router.get('/', async (req, res) => {
   try {
