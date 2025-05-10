@@ -1,5 +1,6 @@
 const { fetchNumbers, updateWindow, getWindow, getAvg } = require('../services/numberService');
 const { VALID_IDS } = require('../utils/constants');
+const { getWindow } = require('../utils/WindowStore');
 exports.handleNumberRequest = async (req, res) => {
     const id = req.params.numberid;
     const { VALID_IDS } = require('../utils/constants');
@@ -19,3 +20,4 @@ exports.handleNumberRequest = async (req, res) => {
     });
   };
   
+ 
